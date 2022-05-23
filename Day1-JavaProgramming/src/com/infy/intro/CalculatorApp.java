@@ -9,9 +9,11 @@ public class CalculatorApp {
 	public static void main(String[] args) {
 
 		Scanner sc=new Scanner(System.in);
+		System.out.println(sc);
 		System.out.println("Enter Two Nos.");
 		int no1=sc.nextInt();
 		int no2=sc.nextInt();
+		System.out.println(no1+" , "+no2);
 		System.out.println("Choose an operation you would like to perform on your data?");
 		System.out.println("1. Addition");
 		System.out.println("2. Subtraction");
