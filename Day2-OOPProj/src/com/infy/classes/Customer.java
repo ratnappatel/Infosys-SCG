@@ -9,7 +9,7 @@ public class Customer {
 	//"always declare your class fields as private"
 	private String customerId;
 	private String customerName;
-	private long contactNo;
+	private long contactNo; // Encapsulated
 	private String address;
 	public Customer() {
 		System.out.println("No-Args Constructor is called...");
@@ -47,7 +47,7 @@ public class Customer {
 	public long getContactNo() {
 		return contactNo;
 	}
-
+// abstraction
 	public void setContactNo(long contactNo) {
 		int otp=(int)(Math.random()*100000);
 		System.out.println("OTP has sent to your registered mobile no  "+otp);
