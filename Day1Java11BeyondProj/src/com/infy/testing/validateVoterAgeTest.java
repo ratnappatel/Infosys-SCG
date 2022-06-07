@@ -1,35 +1,48 @@
 package com.infy.testing;
 
 import org.junit.jupiter.api.Assertions;
+
+import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.TestInstance;
+import org.junit.jupiter.api.TestInstance.Lifecycle;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 
+@TestInstance(value = Lifecycle.PER_CLASS)
 public class validateVoterAgeTest {
 	
-//	@Test
+	
+	VotingSystem sys;
+	@BeforeAll
+	public void createVotingAppObject()
+	{
+		sys=new VotingSystem();
+	}
+	
+	@Test
 	
 public void validateVoterAgeValidTest()throws Exception
 	{
-		VotingSystem sys=new VotingSystem();
+		//VotingSystem sys=new VotingSystem();
 //assertion functions helps to compare/check expected vs actual result of method execution
 		int age=28;
 		Assertions.assertTrue(sys.validateVoterAge(age));
 	}
 
-	//@Test
+	@Test
 	public void validateVoterAgeInvalidTest()throws Exception
 	{
-		VotingSystem sys=new VotingSystem();
+		//VotingSystem sys=new VotingSystem();
 		//assertion functions helps to compare/check expected vs actual result of method execution
 				int age=8;
 				Assertions.assertFalse(sys.validateVoterAge(age));
 	}
 	
-	//@Test
+	@Test
 	public void validateVoterAgeExceptionTest()throws Exception
 	{
-		VotingSystem sys=new VotingSystem();
+		//VotingSystem sys=new VotingSystem();
 		int age=-10;
 		
 		Exception e=Assertions.assertThrows(Exception.class, ()->sys.validateVoterAge(age));
@@ -41,7 +54,7 @@ public void validateVoterAgeValidTest()throws Exception
 	@CsvSource(value= {"19, true","20,true","17,false","16,false"})
 	public void validateVoterAgeTestParameter(int age,boolean expected)throws Exception
 	{
-		VotingSystem sys=new VotingSystem();
+		//VotingSystem sys=new VotingSystem();
 		Assertions.assertEquals(expected, sys.validateVoterAge(age));
 	}
 }
