@@ -30,7 +30,7 @@ public class CalculatorApp {
 						break;
 					}
 			case 2:{
-						int res=no1-no2;
+						int res=(no1>no2)?no1-no2:no2-no1;
 						System.out.println("Difference between Given Nos. is "+res);
 						break;
 				}
