@@ -13,6 +13,7 @@ public class InheritedDataDifferentPackage extends Data{
 		
 		System.out.println("b = "+b);
 		protectedMethod();
+		
 		System.out.println("d = "+d);
 		publicMethod();
 	}

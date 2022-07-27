@@ -1,7 +1,5 @@
 package com.infy.intro;
 
-// to instruct JVM - Class Loader which will load pre-defined classes during runtime to support
-//execution of our/yours program
 import java.util.Scanner;
 
 public class CalculatorApp {

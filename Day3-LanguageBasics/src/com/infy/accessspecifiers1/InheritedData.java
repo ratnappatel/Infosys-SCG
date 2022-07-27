@@ -1,6 +1,7 @@
 package com.infy.accessspecifiers1;
 
 public class InheritedData extends Data {
+	
 	public InheritedData() {
 		//privateMethod();
 		protectedMethod();

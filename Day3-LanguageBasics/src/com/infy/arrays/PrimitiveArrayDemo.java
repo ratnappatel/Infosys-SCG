@@ -4,7 +4,7 @@ public class PrimitiveArrayDemo {
 
 	int arr[];
 	public PrimitiveArrayDemo() {
-		arr=new int[10];
+		arr=new int[10]; // fixed-static in size 
 	}
 	public void addElements(int index,int value)
 	{
@@ -38,6 +38,7 @@ public class PrimitiveArrayDemo {
 		p.printAllElements();
 		System.out.println("=======================================");
 		p.printAnElementAtIndex(5);
+		
 	}
 
 }

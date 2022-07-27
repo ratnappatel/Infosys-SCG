@@ -4,13 +4,12 @@ public class Product {
 	private int id;
 	private String title;
 	private float price;
-	private String [] color;
+	private String [] color; //10 p1[2] / p2[12]
 	public Product() {
 		color=new String[10];
 	}
 
 	public Product(int id, String title, float price, String[] color) {
-		super();
 		this.id = id;
 		this.title = title;
 		this.price = price;
@@ -61,12 +60,14 @@ public class Product {
 
 	public static void main(String[] args) {
 		String colors[]= {"Grey","Rose-Gold","White","Black"};
+		
 		Product p1=new Product(101, "iPhone-10", 2345.678f, colors);
 		p1.displayProductDetails();
 		
 		System.out.println("Array of Products.....");
 		
-		Product products[]=new Product[5];
+		Product products[]=new Product[5]; // An array of Object[user-defined/custom Objects]
+		
 		products[0]=new Product(1, "Title 1", 123.45f, colors);
 		products[1]=new Product(2, "Title 2", 123.45f, colors);
 		products[2]=new Product(3, "Title 3", 123.45f, colors);
@@ -75,6 +76,9 @@ public class Product {
 		
 		for(int i=0;i<products.length;i++)
 			products[i].displayProductDetails();
+		
+		for(Product p: products)
+			p.displayProductDetails();
 
 	}
 
