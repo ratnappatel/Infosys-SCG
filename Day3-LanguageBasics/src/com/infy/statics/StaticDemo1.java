@@ -9,12 +9,11 @@ public class StaticDemo1 {
 	public static void printAmount()
 	{
 		// static method can only access static var
-		System.out.println("Current amount is : "+this.amount);
+		System.out.println("Current amount is : "+amount);
 	}
 	public void addAmount(int amount)
 	{
-		this.amount+=amount;
-		a=100;
+		this.amount+=amount;	
 		
 	}
 	static 

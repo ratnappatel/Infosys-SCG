@@ -1,4 +1,4 @@
-package com.infy.aggregation;
+package com.infy.association;
 
 // POJO class = data[private],getter/setter, default+argument cons
 public class Product {
@@ -6,6 +6,7 @@ public class Product {
 	private int id;
 	private String title;
 	private float price;
+	
 	public Product() {
 		// TODO Auto-generated constructor stub
 	}

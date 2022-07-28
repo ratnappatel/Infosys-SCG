@@ -1,18 +1,21 @@
-package com.infy.aggregation;
+package com.infy.association;
 
 import java.util.Date;
 
 public class Order {
 	
+	//Property of the class
 	private int id;
 	private Date orderDate;
 	// defines Has-a relationship titghtly-coupled
 	private Product orderedProducts[];
+	
+	
 	public Order() {
 		// TODO Auto-generated constructor stub
 	}
 	public Order(int id, Date orderDate, Product[] orderedProducts) {
-		super();
+		
 		this.id = id;
 		this.orderDate = orderDate;
 		this.orderedProducts = orderedProducts;
@@ -45,6 +48,14 @@ public class Order {
 			orderedProducts[i].displayProductDetails();
 		System.out.println();
 	}
-	
-	
+	public float getTotalCost()
+	{
+		float totalCost=0.0f;
+		for(Product p:orderedProducts)
+		{
+			System.out.println(p.getPrice());
+			totalCost+=p.getPrice();
+		}
+		return totalCost;
+	}
 }

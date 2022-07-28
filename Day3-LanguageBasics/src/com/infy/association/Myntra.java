@@ -1,6 +1,9 @@
-package com.infy.aggregation;
+package com.infy.association;
 
+
+import java.time.LocalDate;
 import java.util.Date;
+
 
 public class Myntra {
 
@@ -11,8 +14,11 @@ public class Myntra {
 		
 		Product products[]= {p1,p2,p3}; //added-to-cart
 		
-		Order o1=new Order(101, new Date(), products); // place-order
+		Order o1=new Order(234, new Date(), products);
 		o1.displayOrderDetails(); // displaying order details 
+		
+		Bill b1=new Bill(29,LocalDate.now(), "Credit-Card");
+		b1.generateBill(o1);
 	}
 
 }
