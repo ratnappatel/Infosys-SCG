@@ -10,4 +10,8 @@ public class ICICIBank extends RBIBank{
 		double interest=this.getAvailableBalace()*0.065;
 		System.out.println("Interest for this Quater is(ICICI) :"+interest);
 	}
+	public void display()
+	{
+		System.out.println("From ICICI");
+	}
 }

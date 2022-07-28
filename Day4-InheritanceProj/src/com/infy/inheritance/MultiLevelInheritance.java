@@ -3,6 +3,7 @@ package com.infy.inheritance;
 public class MultiLevelInheritance {
 
 	public static void main(String[] args) {
+		//Child Most class will first call th cons of its parent ==> will call the cons of its parent 
 		C obj=new C(10,20);
 	}
 

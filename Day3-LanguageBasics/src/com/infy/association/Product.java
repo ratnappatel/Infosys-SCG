@@ -1,5 +1,7 @@
 package com.infy.association;
 
+import java.util.Scanner;
+
 // POJO class = data[private],getter/setter, default+argument cons
 public class Product {
 	
@@ -14,6 +16,7 @@ public class Product {
 		
 		this.id = id;
 		this.title = title;
+		this.price=price;
 	}
 	public int getId() {
 		return id;
@@ -46,9 +49,30 @@ public class Product {
 		return "Id : "+this.id+"\nTitle : "+this.title+"\nPrice : "+this.price;
 	}
 	public static void main(String[] args) {
-		Product p1=new Product();
-		System.out.println(p1);
-		//p1.displayProductDetails();
+		// create an application which will add product into product array using runtime input
+		Scanner sc=new Scanner(System.in);
+		
+		Product products[]=new Product[5];
+		for(int i=0;i<5;i++)
+		{
+			Product p=new Product();
+			System.out.println("Enter Product ID :");
+			int id=sc.nextInt();
+			System.out.println("Enter Product Title : ");
+			String title=sc.next();
+			System.out.println("Enter Product Price : ");
+			float price=sc.nextFloat();
+			
+			p.setId(id);
+			p.setTitle(title);
+			p.setPrice(price);
+			
+			products[i]=p;
+			
+		}
+		for(Product p:products)
+			p.displayProductDetails();
 	}
+	
 
 }

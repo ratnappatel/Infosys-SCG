@@ -22,6 +22,7 @@ public class CalculatorApp {
 	public static void main(String[] args) {
 		CalculatorApp calc=new CalculatorApp();
 		calc.add(12,45.98f,23); //static OR early OR COMPILE-TIME
+		calc.add(20,25);
 		// (INT , FLOAT)  (INT , FLOAT ,INT) (FLOAT , INT)
 	
 		
