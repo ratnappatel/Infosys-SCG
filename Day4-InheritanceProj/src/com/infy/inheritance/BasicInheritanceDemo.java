@@ -16,7 +16,6 @@ class Parent
 	
 	public Parent(int no, int otherNo) {
 
-		super();
 		System.out.println("Parent Class Constructor is called..");
 		this.no = no;
 		this.otherNo = otherNo;
@@ -43,13 +42,15 @@ class Parent
 class Child extends Parent
 {	
 	private int myNo;
+	// how many properties are there with child class
+	
+	  public Child(int no, int otherNo,int myNo) 
+	  { 
+		  super(no, otherNo);
+		  this.myNo=myNo;
+		  System.out.println("Child Class Constructor is called..");  
+	  }
 
-	public Child(int no, int otherNo,int myNo) {
-		super(no, otherNo);
-		System.out.println("Child Class Constructor is called..");
-		this.myNo=myNo;
-		// TODO Auto-generated constructor stub
-	}
 	public int getMyNo() {
 		return myNo;
 	}
