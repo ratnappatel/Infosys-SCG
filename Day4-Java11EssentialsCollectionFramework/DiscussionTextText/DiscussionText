@@ -592,7 +592,27 @@ x & y
 Upper-case ==> lower-case
 
 
+set implementation compares before adding an element to collection. Every Collection elements can be compared if they are holding primitive values/string.
+
+For any custome object to use as an element of any Set Implementation class. we must tell our JVM that how you suppose to compare these objects?
 
 
+Comparable Interface : is used to define logic of sorting custom-objects as element
+overriding equals+hashCode : is used to define comparison logic for custom object to check their equality
+
+
+
+Comparator Interface : is also used to define sorting logic for custom objects.
+Comparable Interface : applies default sorting logic for custom objects. At a time we can have only single comparison logic implement with this interface
+
+
+Unique Collection : equals & hashCode
+Sorted Collection : comparable [if we want only one sorting logic to be used] / comparator [if we want sorting logic can be choosen dynamically]
+
+
+
+Map with Custom-Object as value does not require any additional logic to be implement in Custom-Object
+
+Map with Custom-Object as Key requires hashcode+equals method to be overriden in Custom-Object/POJO class
 
 

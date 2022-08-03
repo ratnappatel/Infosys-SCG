@@ -1,6 +1,7 @@
 package com.infy.sets;
 
-public class Book {
+// Must design POJO which is self comparable for checking equality with other object
+public class Book implements Comparable<Book> {
 	private int isbn;
 	private String title;
 	private int noOfPages;
@@ -32,28 +33,29 @@ public class Book {
 		this.noOfPages = noOfPages;
 	}
 	
-	@Override
-	public int hashCode()
+	public boolean equals(Object o1)
 	{
-		System.out.println("Hashcode ....");
-		return this.isbn;
-	}
-	
-	@Override
-	public boolean equals(Object obj)
-	{
-		System.out.println("Equals ....");
-		Book b=(Book)obj;
-		if(this.isbn== b.isbn && this.title.equals(b.title))
+		Book b1=(Book)o1;
+		if(b1.isbn==this.isbn && b1.title.equals(this.title) && b1.noOfPages==this.noOfPages)
 			return true;
 		else
 			return false;
-		
+					
 	}
 	
-	@Override
+	public int hashCode()
+	{
+		int code=this.isbn+this.noOfPages+this.title.hashCode();
+		return code;
+	}
 	public String toString() {
 		return "Book [isbn=" + isbn + ", title=" + title + ", noOfPages=" + noOfPages + "]\n";
+	}
+	@Override
+	public int compareTo(Book b) {
+	
+		int result=this.title.compareTo(b.title);
+		return result;
 	}
 	
 
