@@ -1,0 +1,598 @@
+
+************************************ Day -1 ***********************************************
+An Application is comprises of three layer:
+
+1. Presentation Layer 		:  through which client/end-user will intercat with our application
+							can be build using Front-end/web technology like HTMl, AJAx, React,Angular
+		BACK-END Development				
+							
+2. Business Layer/app 		: Retrieve data from presentation Layer ==> process according to business logic ==> send data to be stored by persistence layer
+
+3. Persistence Layer/Data	:will accept/retrieve data from service layer ==> stores them to any database.
+
+
+Eclipse IDE: is a smart tool to speed-up development of any application using Java Programming Language.
+
+It has smart features like auto-complete the code, auto-generate prototype of code etc...
+
+System : pre-defined class available in java to interact with any hardware resource of the system
+
+
+
+package in java == any directory on our personal computer
+
+
+Keyword : a special words [reserved word] in java which has specific meaning hence we/developer cannot use those word in our program as class-name,method-name, variable-name, 
+
+
+***************************** Day -2 ******************************************************
+
+Variables:
+
+1. Local Variables: are the var declared within a block of code.
+2. Instance Variables: are the var declared within class definition/body
+3. Class/static Variable: are declared with static keyword
+4. Reference Variables: is an instance of the class pointed by 
+
+
+public class Test
+{
+	int aVar; non-static instance
+	static int bVar; class-copy/static var
+	
+	method1(){int a}
+	method2(int b){a not available}
+	
+	try{
+		int x;
+	}
+	
+	static 
+	{
+		int no1;
+	}
+}
+
+
+ABC corporation wanted to automate Employee management system. for which they need to develop an application which stores details of each employee and keeps count of no of employee registered in the application
+
+
+Data types: instructs JVM to allocate specific-amount of memory for each data-type
+
+int x:  4byte
+char choice: 1byte
+long distance: 8 byte
+
+
+8 datatype / primitive types
+
+byte : 1byte;
+short 1byte;
+char 1byte
+int 
+long
+float
+double
+boolean
+
+
+char employeeName: 
+to store sequential chars use String objects 
+
+
+In OOP inheritance helps in achieving 
+
+1. scalability : 
+
+class A{ method1(){a}}
+
+class AChild extends A{method1(){a-updated}}
+
+
+WHY : It helps developing an application much similar like real-life object and implements better Modularity, Code Re-usability, Scalability, Data Hiding, Functionality accessibility.
+
+
+Problem Statement:
+
+Myzone organization is selling different kinds of products and has gain popularity within city. organization wanted expand their business by reaching out to more consumer online. Help them to create a class which can represent their productsin the application.company also declares discounts on different products during different seasons. Design a functionality to implement discout feature as well.
+
+Product
+{
+	id,
+	title,
+	desc,
+	regularPrice,
+	discount
+	=========================
+	cons[arguments] // initialization process 
+	// process data
+	addProduct
+	editProductDetails
+	removeProducts
+	getProductDetails
+	========================
+	actual business functionality
+	calculateDiscountedPrice()
+}
+
+Code Re-usability : can be achieved in 2 different ways
+
+1. To re-use piece of code logic : create it as method 
+2. To re-use class itself : Inheritance
+
+
+
+Method Syntax
+
+specifier modifier return_type method_name(optional parameter)
+
+Specifier : public ,private , protected , default
+modifier : static, final, abstract, synchronized, native
+
+Return-Type : void , any primitive datatype , any class, array
+
+
+method_name can be any identifier followed naming convention rule
+
+
+A developer wanted to build employee management system where we can create an employee object if we know only name of employee or if we know all details of an employee.
+
+
+Best /Recommanded Programming Practice says:
+
+1. Declare data as private
+2. design getters/setters for all data of class
+getters/setter : method for performing read/write operation to encapsulated data of the class.
+
+
+
+Scope of 
+1. class   : within-package, 
+2. variable : local , instance-within class
+3. method : within-class 
+
+
+String s1= "hello"; literal ==> intern() ==> may/may-not create new object of string type
+String s2=new String("hello"); ==>
+
+using new keyword always take more time / performation
+
+
+
+Command Line interface = Character user interface = we type /add is considered as string
+
+"101" ==> 101
+
+
+Ideally Command line arguments are used to pass JVM specific configuration parameter in real time application
+
+
+Static : a modifier can be used with  class/var/method/block
+
+static class : can be only an inner
+
+static var   : all instance/object will share single copy of the var. It will retain the value modified by other objects too. 
+
+static method : can be called without creating an object of the class using class_name.method_name
+
+static block : is a block of code which will be executed prior to main method of the class
+
+
+
+
+
+******************************* Day - 3 ****************************************************
+
+
+
+
+
+Div : a logical division/partition on a web-page to make its content appear/ stand differently from other content of web-page. BLOCK LEVEL DIVISION
+
+span : most-of the time can be used within div section as a child division to style it differently then other content within div section. INLINE-BLOCK DIVISION
+
+SELECTORS: 
+Basic selectors : element , class , id , universal[*]
+Attribute		: CSS help you to style elements having similar attribute
+Pseudo-selectors: CSS dynamic -selector 
+
+as filter : : can filter content based on elements/tags
+
+Element = Family :  paragraph, heading [1,2,3,4,5,6],div
+Class   =  logical-grouping of same/different [group of Hetrogeneous-elements]
+ID		= is a unique identification given to any element within group of [clas,elements]
+
+Any-CONTENT : absolutely anthing presented on web-page
+
+
+RICE
+MUSLI
+UTENSIL LIQUID
+DETTOL
+PARACETAMOL TABLETS
+
+
+GROCERY				MEDICAL 	
+
+
+<A HREF="" TARGET="">CONTENT</A>
+HREF-VALUE=: ANY URL, ANY SECTION OF PAGE 
+TARGET=
+
+
+domain-space 
+
+
+
+
+Garbage Collector Eligibility
+
+
+1.   Object goes out of scope class/method/block{ } :marked -gc
+2. Employee e1=new Employee();  100= becomes de-referenced hence available for garbage collection
+	Employee e2=new Employee(); 200
+	e1=e2
+3. e2=null; becomes eligible for GC
+
+GC : is a dameon thread will be executed infinitely with certain interval
+
+
+
+.equals() : is pre-defined method used to compare two OBJECTS.
+s1.equals(s2)
+
+abc.equals(abc)
+http://marketplace.eclipse.org/marketplace-client-intro?mpc_install=495
+
+
+1. ObjectAid UML 
+
+
+Customer
+Address
+
+Cardinality of Relationship 
+
+Uni-directional / Bi-directional
+Many to Many  for ? swiggy == One-To-Many & Many-To-One 
+
+One To Many  for e-commerce
+One To One  Pan, Aadhar, Passport
+
+One To Many : 
+
+Uni-directional : Student ==> Course
+	One student enroll for multiple course []
+
+Bi-Directional : Course ==> Multiple Student
+
+
+Employee{}
+Department {Employee manager;}
+
+Library{Book books[]/ List<Book>, Set<Book>}
+Book {}
+
+toString(): pre-defined method of java.lang.Object class. It is used to represent/display Object's value. The method will be implicitly called when we pass an object in println method
+
+By -default every object[excepti String] contains the value as :
+
+fully_qualified_name_of_class @ hexa-string of hashcode. When we wanted to print DATA of The Class when an object is passed as an argument to println function
+
+Amazon [Courier Service]
+
+Aggregation: an object of one class will become property/attribute of another class
+				Order { Product p;}
+
+Association: an object of one class will be used [take it as input argument in any function] to execute any function and passed to it as argument.
+
+
+MakeMyTrip ==> BookTicketfor BLR with indianAirLine ==> bookticket(customerdetails)
+
+
+
+Customer ==> amazon ==> calls delivery(order) ==>
+
+
+Everyday Min-ride must be served are : 8
+on top of 8 rides we will calculate rewards
+
+
+Inheritance : helps in reusing the code +  reducing redundency of code + Scalability [modify / add new functionality ]
+
+
+1st Rule : Child class must carry similar constructor [parent-default/no args] child shoul also carry default const
+
+Parent-argument constructor : child must have argument constructor[how many argument it should have]
+
+In Any Programming Language: for Inheritance while creating an object of child class ==> it will invoke constructor for its parent class first ==> call constructor of child class
+
+
+Higher ------> Lower
+
+Public --> protected --> default --> private
+
+
+*********************************  Day 4  ***************************************************
+
+Fullstack Development:
+
+1. MEAN Stack : 
+		front-end : angular     SPA application
+		back-end : Node+Express
+		DB: MongoDB
+		
+2. MERN Stack 
+		front-end : React /React-Native any mobile device
+		back-end : Node+Express
+		DB: MongoDB
+3. Java
+	    front-end : React /angular 
+		back-end : Spring Framweork[java]
+		DB: Mysql
+
+4. .Net
+
+
+
+
+Java Programming is Pure Object Oriented language. [java works on objects & only Objects except 8 primitive data type]
+
+From Java 5 onwards to convert primitive value to an Object form wrapper classes are introduced.
+
+Major reason why Wrapper classes were introduced ?
+1. to convert primitive values ==> an Object so that they can be store as data within any data-structure.
+
+2. Wrapper class has got pre-defined methods to perform manipulation of primitive values+ conversion of primitive values.For Example
+Integer.parseInt(String)
+
+"101"-> (101 + 25) == 126
+
+
+To Wrap int ==> Integer
+To Wrap float ==> Float
+to Wrap boolean ==> Boolean
+To Wrap char ==> Character
+
+
+JDK 5.0 also provide a feature of Auto-Boxing & Un-Boxing
+
+To Create group of int values as dynamic Array [ArrayList]
+
+Collection = DataStructures implementation
+
+Any DataStructure can store only & only Objects and can-not store primitive values.
+
+struct {
+int data, pointer}
+
+
+public void getProduct(Integer n1,Integer n2)
+{
+	Integer product=n1*n2;
+	System.out.println("The Product is : "+);
+}
+int a=100,b=300;
+getProduct(a,b)// if Java Compiler is  5.0 or higher will implicitly converts int a==> Integer
+
+
+ASCII : American standard Code for Information-Intechange
+
+To Check equality of any type of Objects in java we must use equals method and avoid using == operator
+
+
+Apperal Size: S[26CM WAIST] , M , L , XL , XXL
+
+28-CM
+
+only 2 var 3-4 
+
+
+***********************  Java 11 Essentials ************************************
+
+Reg-Expression
+
+Reg Expression : is a sequence of character[a-z,0-9,specialSymbol] created as String object to be evaluated against.
+
+There are three classes are provided:
+
+1. Matcher class : java.util.regex api
+2. Pattern class : java.util.regex
+3. String class  : java.lang api
+
+ratna_patel
+
+
+RegEx for phone :\d{10}
+
+[A-Z]{5}\d{4}[A-Z]{1} : AUTPP3269R
+
+
+
+date1.compareTo(date2) == -1  date2>date1
+
+"[Employee].?"
+
+first_char can be either or of Employee
+. because of . can be present once
+
+E_
+
+To Comapre Objects in Java for check their equality we use equals method .
+
+obj1.equals(obj2);
+
+
+String s1="hello"; String s2=new String("hello");
+s1.equals(s2);
+
+To become a valida java Object follow given rule.
+If two objects has same hashcode then they are considered as equals.
+If two object are the same then they must have same hashcode.
+
+
+
+If two User has Same ID then They must be equal exactly for that they both must have same hashcode 
+
+
+if a/any method is declared as abstract int any class THEN THE CLASS MUST BE DECLARED AS ABSTRACT.
+We cannot create an object of abstract class.
+
+
+To insure having particular behaviour MUST BE IMPLEMENTED BY ALL MY CHILD CLASS we declare it as abstract.
+
+
+An Abstract : an entity which can not full describe itself. It can be described by its sub-type.
+
+An abstract entity is a common name given to the group of its similar kind of entity.
+which does not exists independently in real-time world.
+
+WE CANNOT CREATE AN OBJECT/INSTACE OF ABSTRACT ENTITY.REFERENCE VARIABLE OF ABSTRACT CLASS CAN BE CREATED.
+
+For example : what is a color of a bird? 
+
+Why abstract?: 
+1. To impose standards to be followed by each sub-type of abstract entity.
+2. To perform generalization/specialization improve code-reusability.
+
+
+MARIO : start game for first time. [Basic Mario-Char]
+During Runtime : Mario -Char gets changed into Super-Mario / Bravo-Mario
+
+
+An Abstract Class: can contain properties/fields + constructor + concrete method + abstract method
+
+An Interface : is called a pure abstract class which by default considers all method as 
+public static abstract.
+
+fields in interface are by default public static final
+
+Prior to Java 8.0 Interface are not allowed to carry any concrete method.
+
+Java does not support MULTIPLE-INHERITANCE.  WHICH CAN OVERCOME BY USING INTERFACE.
+Interface can be used for providing Abstraction of Behaviour 
+Prior to Java 8 : Interface cannot have concrete methods.
+
+According to Java 8 consideration
+Interface can only carry Constants
+Abstract class can carry instance fields + constructor to initialize them
+
+Interface can be used to impose standardization of behaviour in all sub-types. Sub-types/classes has to override abstract methods of an interface which is implemented.
+
+Some time it's found that we use an interface for certain feature which contains only one abstract method.
+
+There are multiple way to override abstract method of Interface
+1. follow basic implementation & override it
+2. override by creating anonymous class
+3. lambda expression
+
+
+Java has a pre-defined interfaces with Single-Abstract Method init
+
+
+
+An exception always display Stack traced statement which participated in the occurence of an exception.
+
+
+
+10 < 17 Business logic will take /consider it as logical problem/exception
+
+
+throw keyword is used to Create an exception object explicitly...
+throws keyword is used to declare an exception to be handled by calling function
+
+Size not available
+Color with requested size is not available
+delivery to given zip code is not available 
+
+For RutimeException throws declaration is not mandatory.
+
+has to be displayed in a locale language : japenese, chinese, turkey,......
+
+
+Best Practices to be followed for efficient use of Exception Handling
+
+1. Where we should add try...catch block
+	in the method which is causing exception OR
+	I should put try ...catch block in a method which is calling exception_prone method
+Ans. Developer has to decide when & where to communicate/display exception messages .
+	If Exception[custom] is of DataValidation type then ==> to be rendered/displayed to UI 
+	If Exception is due to Application resources ==> rendered at server console
+	network => server console
+	
+	
+	
+	
+	
+	********************************* Collection Framework  ********************************
+	
+	What is DS[Data-Structure]?  : Used for storing data in a specific manner[logic/algorithm]
+	 which also makes data retrieval/manipualtion faster to improve performance of application.
+	 
+	 In languages like C /C++ developer has to write a Basic-logic of any Data-Structure.
+	 In Java  All Data-Structure's Basic-logic is pre-written + Basic-Logic of Manipualting these data in particular way/manner [Algorithm- searching, sorting ] 
+	 
+	 add(element) : add it as last element of list
+	 add(element,2):
+	 
+	 Collection Framework[java.util] : is a group of class + interfaces provided with Data-Structure & Algorithm in pre-defined format.
+	 
+	Why need DS? : To 1. Manage Application Data [in-memory]
+
+
+select *  from products;    ==> Java [collection{data}]==> using an algorithm ==> sorted, serach binary, priority, graph 
+
+slecet * from product order by price  desc
+
+
+Collections are of Three Kind:
+
+1. List : when we need our application to store data which must follow their insertion 	     order, we should use this type of collection
+	ArrayList, LinkedList, Vector non-synchronized
+	ArrayList : Dynamic -Array 
+	LinkedList - Doubly-LinkedList addFirst,addLast,getFirst,getLast
+	Vector: deprecated similar to arraylist in memory but Synchronized version of arraylist
+
+2. Set : When we need our application does not allow duplicate elements at all
+		HashSet, LinkedHashSet, TreeSet
+		
+		HashSet : gurantees unique element collection
+		LinkedHashSet : unique + following insertion order
+		TreeSet: unique + sorted[A-Z, 0-9]\
+3. MAP :  stores element as [key=value]. When we try adding duplicate key map will replace current value of the same key present in collection.
+	
+		HashMap  : stores key=value element where [value=can be duplicate null can be allowed for multiple time] [key!=duplicate{null allowed only once}]
+		LinkedHashMap : hashmap+insertion order would be maintained
+		TreeMap :   hashmap + sorted by key object always[by default]
+		
+		
+		3 collection * 3 impl * 2[primitve,Custom] Comparabale ,Comparator interface usage 
+	18 
+
+
+Programming Practice : always create collection of similar Objects only. they can be iterated / converted/manipuated in same way easily.
+
+
+Generics : is the feature added from JDK 5.0 onwards to apply Type-Safety to Any collection object during compile time .
+
+
+Any Object : All Wrapper, String , Pre-Defined , Custom-Object
+
+To make Custom Object Comparable : implement Comparable interface int POJO-class custom-object & override compareTo method 
+
+
+1  / 0  / -1
+
+
+x & y 
+
+
+
+
+Upper-case ==> lower-case
+
+
+
+
+
+
