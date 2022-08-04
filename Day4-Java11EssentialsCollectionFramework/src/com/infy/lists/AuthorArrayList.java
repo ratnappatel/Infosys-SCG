@@ -60,6 +60,9 @@ public class AuthorArrayList {
 
 		System.out.println(authors1);
 		this.sortedList(authors1);
+		
+		authors1.sort((a1,a2)->a1.getId()-a2.getId());
+		System.out.println(authors1);
 	}
 
 	public static void main(String[] args) {
